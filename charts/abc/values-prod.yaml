@@ -1,0 +1,17 @@
+replicaCount: 2
+
+resources:
+  requests:
+    cpu: 60m
+    memory: 60M
+
+ingress:
+  hosts:
+    - host: abc-prod.azurelaboratory.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: abc-prod-tls
+      hosts:
+        - abc-prod.azurelaboratory.com

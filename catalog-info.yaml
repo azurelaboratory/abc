@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: abc
+  description: abc is a Python app that displays pod details and status
+  annotations:
+    github.com/project-slug: azurelaboratory/abc
+    backstage.io/techdocs-ref: dir:.
+    argocd/app-name: abc-dev
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
