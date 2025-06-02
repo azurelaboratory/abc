@@ -1,10 +1,8 @@
-replicaCount: 
-
+replicaCount: null
 resources:
   requests:
     cpu: 40m
     memory: 40M
-
 ingress:
   hosts:
     - host: abc-dev.azurelaboratory.com
@@ -15,3 +13,5 @@ ingress:
     - secretName: abc-dev-tls
       hosts:
         - abc-dev.azurelaboratory.com
+image:
+  tag: 5833db5
